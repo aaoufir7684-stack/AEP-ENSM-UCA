@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>AEP ENSM UCA</title>
+</head>
+
+<body>
+   <canvas id="bgCanvas"></canvas>
+   <!-- Animated Preloader -->
+<div id="preloader">
+  <img src="logo.png" alt="AEP Logo" class="preloader-logo">
+</div>
+
+  <!-- navbar -->
+<!-- ========================================
+    
+     ======================================== -->
+
+<nav class="modern-navbar">
+    <div class="navbar-wrapper">
+        
+        <!-- Logo Section -->
+        <div class="navbar-logo">
+            <img src="logo.png" alt="AEP Logo" class="nav-logo-img">
+           
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="navbar-links">
+            <li><a href="#home" class="nav-item active" data-section="home">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a></li>
+            
+            <li><a href="#members" class="nav-item" data-section="members">
+                <i class="fa-solid fa-users"></i>
+                <span>Members</span>
+            </a></li>
+            
+            <li><a href="#partners" class="nav-item" data-section="partnerships">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Partners</span>
+            </a></li>
+            
+            <li><a href="#activities" class="nav-item" data-section="activities">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Activities</span>
+            </a></li>
+            
+            <li><a href="#contact" class="nav-item" data-section="contact">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+            </a></li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="navbar-social">
+            
+            <a href="https://www.instagram.com/aep.ens_club?igsh=bnVsZDI4ZjY4bDBu&utm_source=qr" target="_blank" class="nav-social-link">
+                <i class="fa-brands fa-instagram"></i>
+                <img class="facebook-icon" src="icons/WhatsApp Image 2025-12-19 à 15.30.11_1c64988a.jpg" alt="">
+            </a>
+            <a href="https://www.facebook.com/share/1A4G4gNZwm/" target="_blank" class="nav-social-link">
+                <i class="fa-brands fa-facebook-f"></i>
+                <img class="facebook-icon" src="icons/WhatsApp Image 2025-12-19 à 15.30.11_eb7e68d2.jpg" alt="">
+            </a>
+
+             <a href="https://vm.tiktok.com/ZSHwg1M3ysUpB-SWnYR/" target="_blank" class="nav-social-link">
+                <i class="fa-brands fa-instagram"></i>
+                <img class="facebook-icon" src="icons/titok.png" alt="">
+            </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+    <!-- Active Indicator -->
+    <div class="nav-indicator"></div>
+</nav>
+
+
+  <!-- home section -->
+  <div class="aboutus reveal" id="home">
+    <div class="image-wrapper">
+      <img class="zoom-img" src="home.jpeg.jpg" alt="">
+    </div>
+    <div class="details">
+      <h1>About Us  </h1>
+      <p>Founded on December 18, 2024, at the École Normale Supérieure of Marrakech, the AEP Club (Club des Amis de l’École Publique) is a dynamic student initiative dedicated to promoting the values of public education. Through social, cultural, and educational activities, the club empowers students to engage with their communities, develop leadership skills, and support inclusive learning environments.</p>
+    </div>
+  </div>
+
+<section class="members reveal" id="members">
+        <div class="members-container">
+            <div class="section-header">
+                <span class="section-badge">Our Team</span>
+                <h2 class="section-title">Meet Our Members</h2>
+            </div>
+        
+            <div class="leadership-row">
+                <div class="member-card leadership-card">
+                    <div class="member-image-wrapper">
+                        <img src="members/taib.jpg" alt="President" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Tayeb Adrkaoui</h3>
+                        <div class="president-badge">★ President ★</div>
+                    </div>
+                </div>
+
+                <div class="member-card leadership-card">
+                    <div class="member-image-wrapper">
+                        <img src="members/laila.jpg" alt="Responsible" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Mme Laila OUCHEN</h3>
+                        <div class="president-badge">★ The Responsible of the club ★</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="regular-members-grid">
+                <div class="member-card">
+                    <div class="member-image-wrapper">
+                        <img src="members/amina.jpg" alt="Vice President" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Amina ELKADIRI</h3>
+                        <div class="president-badge">★ The vice President ★</div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-image-wrapper">
+                        <img src="members/yasmine.jpg" alt="Counsellor" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Yasmine Zouba</h3>
+                        
+                        <div class="president-badge">★ General Secretary ★</div>
+                       
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-image-wrapper">
+                        <img src="members/aymane.jpg" alt="Design Manager" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Aymane Aoufir</h3>
+                        <div class="president-badge">★ Design Manager ★</div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-image-wrapper">
+                        <img src="members/hafsaa.jpg" alt="General Secretary" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Hafsaa Benchettou</h3>
+                        <div class="president-badge">★ Counsellor ★</div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-image-wrapper">
+                        <img src="members/ikram.jpg" alt="Media Manager" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Ikram bel bachir</h3>
+                        <div class="president-badge">★ Media Manager ★</div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-image-wrapper">
+                        <img src="members/mouad.jpg" alt="Head of communication" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Mouad Idraban</h3>
+                        <div class="president-badge">★ Head of communication ★</div>
+                    </div>
+                </div>
+
+                
+                <div class="member-card">
+                    <div class="member-image-wrapper">
+                        <img src="members/oumaima.jpg" alt="Logistics Manager" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Oumaima HASSANI</h3>
+                        <div class="president-badge">★ LOGISTICS MANAGER ★</div>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-image-wrapper">
+                        <img src="members/sabri.jpg" alt="Membership Coordinator" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Adbelhak Sabri</h3>
+                        <div class="president-badge">★ Membership Coordinator ★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  
+<section class="partnerships reveal" id="partners">
+    <div class="partnerships-container">
+        
+        <!-- Section Header -->
+        <div class="partnerships-header">
+            <span class="partnerships-badge">Our Network</span>
+            <h2 class="partnerships-title">Our Partners</h2>
+            <p class="partnerships-description">Collaborating with excellence to create meaningful impact</p>
+        </div>
+
+        <!-- Partners Grid -->
+        <div class="partners-grid">
+            
+            <!-- PARTNER 1 -->
+            <div class="partner-card">
+                <div class="partner-logo-wrapper">
+                    <img src="partrens/qadi.jpg" alt="Partner 1" class="partner-logo">
+                </div>
+                <h3 class="partner-name"> UNIVERSITY CADI AYYAD</h3>
+            </div>
+
+            <!-- PARTNER 2 -->
+            <div class="partner-card">
+                <div class="partner-logo-wrapper">
+                    <img src="partrens/aaep.jpg"Partner 2" class="partner-logo">
+                </div>
+                <h3 class="partner-name">ASSOCIATION AEP </h3>
+            </div>
+
+            <!-- PARTNER 3 -->
+            <div class="partner-card">
+                <div class="partner-logo-wrapper">
+                    <img src="partrens/ispit.jpg" alt="Partner 3" class="partner-logo">
+                </div>
+                <h3 class="partner-name">ISPITS</h3>
+            </div>
+
+            <!-- PARTNER 4 -->
+            <div class="partner-card">
+                <div class="partner-logo-wrapper">
+                    <img src="partrens/agballo.jpg" alt="Partner 4" class="partner-logo">
+                </div>
+                <h3 class="partner-name">ASSOCIATION AGHBALOU</h3>
+            </div>
+
+            <!-- PARTNER 5 -->
+            <div class="partner-card">
+                <div class="partner-logo-wrapper">
+                    <img src="partrens/b.jpg" alt="Partner 5" class="partner-logo">
+                </div>
+                <h3 class="partner-name"> ASSOCIATION ANJAC</h3>
+            </div>
+
+            <!-- PARTNER 6 -->
+            <div class="partner-card">
+                <div class="partner-logo-wrapper">
+                    <img src="partrens/cdrt.jpg" alt="Partner 6" class="partner-logo">
+                </div>
+                <h3 class="partner-name"> ASSOCIATION CDRT</h3>
+            </div>
+
+            <!-- PARTNER 7 -->
+            <div class="partner-card">
+                <div class="partner-logo-wrapper">
+                    <img src="partrens/a.jpg" alt="Partner 7" class="partner-logo">
+                </div>
+                <h3 class="partner-name">INSTITUTION LAMRANI</h3>
+            </div>
+
+            <!-- PARTNER 8 -->
+            <div class="partner-card">
+                <div class="partner-logo-wrapper">
+                    <img src="partrens/dd.jpg" alt="Partner 8" class="partner-logo">
+                </div>
+                <h3 class="partner-name">Center Hospitalo- Universitaire Mohammed VI Marrakech</h3>
+            </div>
+
+            <!-- PARTNER 9 -->
+            <div class="partner-card">
+                <div class="partner-logo-wrapper">
+                    <img src="partrens/WhatsApp Image 2025-12-19 à 15.26.55_803149db.jpg" alt="Partner 9" class="partner-logo">
+                </div>
+                <h3 class="partner-name">CLUB DIGITAL CRAFT</h3>
+            </div>
+
+            <!-- PARTNER 10 -->
+            <div class="partner-card">
+                <div class="partner-logo-wrapper">
+                    <img src="partrens/theatre.jpg" alt="Partner 10" class="partner-logo">
+                </div>
+                <h3 class="partner-name">CLUB THE CATHARSIS STAGE</h3>
+            </div>
+
+            <!-- PARTNER 11 -->
+            <div class="partner-card">
+                <div class="partner-logo-wrapper">
+                    <img src="partrens/bb.jpg" alt="Partner 11" class="partner-logo">
+                </div>
+                <h3 class="partner-name">carrer center</h3>
+            </div>
+
+        </div>
+      </section>
+
+
+     <!--ACTIVITIES -->
+
+<section class="activities reveal" id="activities">
+    <div class="activities-container">
+        
+        <!-- Section Header -->
+        <div class="activities-header">
+            <span class="activities-badge">What We Do</span>
+            <h2 class="activities-title">Our Activities</h2>
+            <p class="activities-description">Engaging experiences that inspire growth and creativity</p>
+        </div>
+
+        <!-- Activities Grid -->
+        <div class="activities-grid">
+            
+            <!-- ACTIVITY 1 -->
+            <div class="activity-card">
+                <div class="activity-image-wrapper">
+                    <img src="activities/EV11.jpeg.jpg" alt="Activity 1" class="activity-img">
+                    <div class="activity-date-badge">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>OCTOBER 02, 2025</span>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h3 class="activity-name">The Emergency Response Workshop led By: Prof Laila Ouchen</h3>
+                    <p class="activity-description"> The Emergency Response Workshop: React Quickly, Act Correctly focused on equipping participants with practical skills to respond effectively in urgent situations. Through interactive exercises and real-life scenarios, attendees learned how to assess emergencies, make quick decisions, and take appropriate actions to ensure safety and minimize risks.</p>
+                   
+                </div>
+            </div>
+
+            <!-- ACTIVITY 2 -->
+            <div class="activity-card">
+                <div class="activity-image-wrapper">
+                    <img src="activities/3.jpeg.jpg" alt="Activity 2" class="activity-img">
+                    <div class="activity-date-badge">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>November 08, 2025</span>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h3 class="activity-name">Integration Day of AEP Members</h3>
+                    <p class="activity-description">We organized an integration day for cell members with the aim of promoting communication, sharing, and cohesion between members and their cell leaders. The day was marked by speeches, fun and interactive activities, moments of exchange, and a feedback session. This event strengthened team spirit and the bonds between participants in a friendly and dynamic atmosphere.</p>
+                  
+                </div>
+            </div>
+
+            <!-- ACTIVITY 3 -->
+            <div class="activity-card">
+                <div class="activity-image-wrapper">
+                    <img src="activities/EV2.jpeg.jpg" alt="Activity 3" class="activity-img">
+                    <div class="activity-date-badge">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span> November12, 2025</span>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h3 class="activity-name">The Green March Day</h3>
+                    <p class="activity-description"> On the occasion of the commemoration of the glorious Green March, the Club of AEP took part in the celebration organized at the École Normale Supérieure on November 12, 2025. The day was marked by a variety of cultural and educational activities, including speeches, poetry, debates, artistic performances, and theater, all carried out in a spirit of patriotism, remembrance, and civic engagement. The event highlighted the role of youth in transmitting national values and preserving the historical heritage of the Kingdom.</p>
+                    
+                </div>
+            </div>
+
+            <!-- ACTIVITY 4 -->
+            <div class="activity-card">
+                <div class="activity-image-wrapper">
+                    <img src="activities/ev1.jpeg.jpg" alt="Activity 4" class="activity-img">
+                    <div class="activity-date-badge">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>November 19, 2025</span>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h3 class="activity-name">Closing Ceremony of the 6th Edition of the Teacher of the Year Award</h3>
+                    <p class="activity-description">  The closing ceremony of the 6th edition of the Teacher of the Year Award, organized by the Mohammed VI Foundation for the Promotion of Social Works in Education and Training, honored public primary school teachers for their innovative pedagogical initiatives. The event, attended by institutional partners and members of the Club of AEP, highlighted educational excellence, professional commitment, and the importance of partnerships in promoting the teaching profession.</p>
+                   
+                </div>
+            </div>
+
+            <!-- ACTIVITY 5 -->
+            <div class="activity-card">
+                <div class="activity-image-wrapper">
+                    <img src="activities/WhatsApp Image 2025-12-12 at 11.26.03 PM.jpeg.jpg" alt="Activity 5" class="activity-img">
+                    <div class="activity-date-badge">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>DECEMBER 28,2025</span>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h3 class="activity-name">Educational Actions Workshop led by Khalid Charri</h3>
+                    <p class="activity-description">The Club of AEP  organized a workshop titled “Educational Actions”, led by Khalid Charri, aimed at enhancing the pedagogical skills of first-year education students. The interactive session provided practical insights into teaching practices, encouraged discussion and teamwork, and deepened participants’ understanding of educational concepts. This event highlights the club’s commitment to enriching student life and supporting the professional development of future teachers.</p>
+                    
+                </div>
+            </div>
+             <div class="activity-card">
+                <div class="activity-image-wrapper">
+                    <img src="activities/EVV88.jpeg.jpg" alt="Activity 5" class="activity-img">
+                    <div class="activity-date-badge">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>DECEMBER 29,2025</span>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h3 class="activity-name">Personal Development Skills Workshop led By: Prof Laila Ouchen</h3>
+                    <p class="activity-description"> This workshop focused on enhancing self-development skills. Participants engaged in activities such as chess, writing, and other exercises designed to improve critical thinking, creativity, and personal growth.</p>
+                    
+                </div>
+            </div>
+
+            <!-- ACTIVITY 6 -->
+            <div class="activity-card">
+                <div class="activity-image-wrapper">
+                    <img src="activities/EV5.jpeg.jpg" alt="Activity 6" class="activity-img">
+                    <div class="activity-date-badge">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>DECEMBER 12,2025</span>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h3 class="activity-name">Atelier de la francophonie en musique co-créée avec l'IA</h3>
+                    <p class="activity-description">Dans le cadre du Jour des professeurs de français, et sous le thème « La francophonie en musique », l’atelier « La classe en spectacle : musique, théâtre et lecture co-créés avec l’IA », animé par M. Hossam Mohamed, a mis en valeur l’usage créatif de l’IA dans l’enseignement du français à travers la musique, le théâtre, la lecture et la poésie.</p>
+                    
+                </div>
+            </div>
+
+     
+
+        </div>
+
+     
+
+    </div>
+</section>
+
+
+<section class="contact reveal" id="contact">
+    <div class="contact-container">
+        
+        <!-- Section Header -->
+        <div class="contact-header">
+            <span class="contact-badge">Get In Touch</span>
+            <h2 class="contact-title">Contact Us</h2>
+            <p class="contact-description">We'd love to hear from you! Reach out through any of these channels</p>
+        </div>
+
+        <!-- Contact Content -->
+        <div class="contact-content">
+            
+            <!-- Left Side - Contact Info Cards -->
+            <div class="contact-info-section">
+                
+                <!-- Location Card -->
+                <div class="contact-info-card">
+                    <div class="contact-icon-wrapper location-icon">
+                        <i class="fa-solid fa-location-dot">
+                            
+                        </i>
+                        
+                    </div>
+                    <div class="contact-info-text">
+                        <h3 class="contact-info-title">Our Location</h3>
+                        <p class="contact-info-detail">École Normale Supérieure Marrakech, Morocco</p>
+                        <p class="contact-info-detail">BP 2400 Hay Hassani Route d'essaouira 40000 Marrakech</p>
+                    </div>
+                </div>
+
+                <!-- Email Card -->
+                <div class="contact-info-card">
+                    <div class="contact-icon-wrapper email-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <h3 class="contact-info-title">Email Us</h3>
+                        <a href="mailto:aepclub@ens.ma" class="contact-info-link">ClubAEP.ENS@uca.ac.uca</a>
+                        <p class="contact-info-detail">We'll respond within 24 hours</p>
+                    </div>
+                </div>
+
+                <!-- Social Media Card -->
+                <div class="contact-info-card social-card">
+                    <div class="contact-icon-wrapper social-icon">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <h3 class="contact-info-title">Follow Us</h3>
+                        <div class="social-links">
+                           <a href="https://www.facebook.com/share/1A4G4gNZwm/" target="_blank" class="social-link facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/aep.ens_club?igsh=bnVsZDI4ZjY4bDBu&utm_source=qr" target="_blank" class="social-link instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://vm.tiktok.com/ZSHwg1M3ysUpB-SWnYR/" target="_blank" class="social-link tiktok">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+          
+            <div class="contact-map-section">
+                <div class="map-wrapper">
+                  
+                    <iframe 
+                        src="https://maps.app.goo.gl/K1LbxmDMByGjaefm8" 
+                        class="contact-map" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                
+               
+              
+            </div>
+
+        </div>
+
+      
+    </div>
+</section>
+
+<!-- Footer (Optional) -->
+<footer class="footer reaveal">
+    <div class="footer-content">
+        <div class="footer-logo-section">
+            <img src="logo .png" alt="AEP Logo" class="footer-logo">
+            <p class="footer-tagline">Club des Amis de l'École Publique</p>
+        </div>
+        <div class="footer-links">
+            <a href="#home" class="footer-link">Home</a>
+            <a href="#members" class="footer-link">Members</a>
+            <a href="#partners" class="footer-link">Partners</a>
+            <a href="#activities" class="footer-link">Activities</a>
+            <a href="#contact" class="footer-link">Contact</a>
+        </div>
+    
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 AEP Club. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="script.js"></script> 
+
+</body>
+
+</html>
